@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jquery crash course | Selectors</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style media="screen">
+      body {
+        font-size: 17px;
+        font-family: arial;
+        background: #f4f4f4;
+        line-height: 1.5em;
+      }
+      header {
+        background: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        border: 4px solid #000;
+        margin-bottom: 10px;
+      }
+      #container {
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Jquery Crash Course</h1>
+    </header>
+    <div id="constainer">
+      <button id="button1">button 1</button>
+      <button id="button2">button 2</button>
+      <p class="para1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea nam,
+        mollitia, ducimus adipisci aspernatur ullam. Sunt perferendis, sint
+        minima suscipit.
+      </p>
+
+      <a href="http://google.com">Google</a>
+      <a href="http://yahoo.com">Yahoo</a>
+    </div>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#button1").click(function (e) {
+          console.log(e);
+        });
+      });
+    </script>
+  </body>
+</html>
