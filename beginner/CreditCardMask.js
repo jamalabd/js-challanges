@@ -1,0 +1,1 @@
+function maskify(cc) {}
